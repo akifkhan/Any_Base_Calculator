@@ -4,12 +4,7 @@
 #          
 #                    ANY BASE CALCULATOR
 #		       
-#                   Name : Akif khan YusufZai  
-#					Roll No : 11 CSS 07
-#					Enrolement No. : 11-5747
-#                   Computer Engineering III Semester 
-#
-#
+#                   Name : Akif khan (akif500@gmail.com)
 #
 #
 #
@@ -28,18 +23,6 @@ import java.awt.event.*;
 
 public class Base implements ActionListener 
 {
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	JFrame f;
 	JTextField text1,text2,text3,text4,text5,text6,text7;             //  FOR GRAPHICAL USER INTERFACE
 	JLabel name1,name2,name3,name4,name5,name6,name7,heading;
@@ -48,21 +31,7 @@ public class Base implements ActionListener
 	public int f1=0;
 	public int f2=0;
 	
-	
-
-
-     
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 int convertb(int r)
+	int convertb(int r)
 	{
 		if(r>9 && r<36)
 		{	
@@ -523,15 +492,10 @@ public class Base implements ActionListener
 		}
 
 
-
-
-
-
-
-if(e.getSource()==button4)     // DIVIDE
-   {
-     System.out.println("Divide");
-        String str = text6.getText();
+ 	if(e.getSource()==button4)     // DIVIDE
+   	{
+     		System.out.println("Divide");
+        	String str = text6.getText();
 			int base = Integer.parseInt(text7.getText());
 			String cno = cbase(s,b,10);
 			String cno1 =cbase(str,base,10);
@@ -545,12 +509,12 @@ if(e.getSource()==button4)     // DIVIDE
 			
 			text2.setText(cno);
 			text5.setText(String.valueOf(b));
-    }
+    	}
 
    
 
 
- if(e.getSource()==button5)           //NOT
+ 	if(e.getSource()==button5)           //NOT
 		{	String str = text1.getText();
 			int base = Integer.parseInt(text3.getText());
 			String cno = cbase(str,base,2);
@@ -570,7 +534,7 @@ if(e.getSource()==button4)     // DIVIDE
 		}
 
 		
-if(e.getSource()==button6)  //OR
+	if(e.getSource()==button6)  //OR
 		{   String str = text6.getText();
 			int base = Integer.parseInt(text7.getText());
 		System.out.println("button OR");
@@ -584,7 +548,7 @@ if(e.getSource()==button6)  //OR
 			text5.setText(String.valueOf(2));
 		}
 
-if(e.getSource()==button7)   //  AND BUTTON
+	if(e.getSource()==button7)   //  AND BUTTON
 		{	
 		System.out.println("button 7");
 		String str = text1.getText();
@@ -627,14 +591,14 @@ if(e.getSource()==button7)   //  AND BUTTON
 		}
 
 
-if(e.getSource()==button8)                  //NAND
+	if(e.getSource()==button8)                  //NAND
 		{   System.out.println("button 8");
 			String cno = cbase(s,b,2);
 			text2.setText(cno);
 			text5.setText(String.valueOf(2));
 		}
 
-if(e.getSource()==button9)                 // NOR
+	if(e.getSource()==button9)                 // NOR
 		{  System.out.println("button 9");
 			String cno = cbase(s,b,2);
 			text2.setText(cno);
@@ -642,13 +606,7 @@ if(e.getSource()==button9)                 // NOR
 		}
 
 
-
-
 }
-
-
-
-	
 
 	public static void main(String[] args)
 	{
